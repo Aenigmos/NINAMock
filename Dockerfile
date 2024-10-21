@@ -3,7 +3,7 @@ FROM python:3.8-slim
 
 WORKDIR /app
 
-# Installazione della libreria MQTT
+# Installazione della versione 1.5.1 di paho-mqtt
 RUN pip install paho-mqtt
 
 # Copia dello script NINAMock nel container
