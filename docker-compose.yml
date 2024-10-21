@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nina-mock:
+    build: .
+    container_name: nina-mock
+    volumes:
+      - ./config.json:/app/config.json  # Monta il file di configurazione
+    environment:
+      - PYTHONUNBUFFERED=1  # Assicura che i log vengano mostrati in tempo reale

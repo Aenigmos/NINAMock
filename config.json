@@ -1,0 +1,4 @@
+{
+    "broker_address": "IP_DEL_BROKER_MOSQUITTO",
+    "topic": "nina/status"
+}
