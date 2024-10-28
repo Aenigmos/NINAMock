@@ -2,7 +2,7 @@
 # NINAMock Project
 
 ## Descrizione
-Questo progetto simula l'invio di messaggi MQTT da N.I.N.A. utilizzando Docker. L'indirizzo del broker Mosquitto e il topic sono configurabili tramite un file `config.json`.
+Questo progetto simula l'invio di messaggi MQTT da N.I.N.A. utilizzando Docker. I messaggi inviati possono rappresentare vari stati e eventi, come la calibrazione, l'inizio e la fine delle osservazioni, e potenziali errori. L'indirizzo del broker Mosquitto e il topic sono configurabili tramite un file `config.json`.
 
 ## Struttura del progetto
 
@@ -17,6 +17,15 @@ ninamock/
 ├── stop_ninamock.bat     # Script batch per fermare NINAMock
 └── README.md             # Documentazione del progetto
 ```
+
+## Tipi di Messaggi Inviati
+
+Il progetto simula l'invio dei seguenti tipi di messaggi:
+
+- **calibration_status**: Indica lo stato di calibrazione della strumentazione.
+- **observation_started**: Indica che l'osservazione è iniziata.
+- **observation_ended**: Indica che l'osservazione è terminata.
+- **error**: Indica che si è verificato un errore durante il processo di osservazione.
 
 ## Prerequisiti
 

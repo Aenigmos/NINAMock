@@ -1,4 +1,4 @@
 {
     "broker_address": "10.10.15.85",
-    "topic": "nina/status"
+    "topic": "Test Topic"
 }
