@@ -18,7 +18,7 @@ broker_address = config["broker_address"]
 topic = config["topic"]
 
 # Configurazione del client MQTT
-client = mqtt.Client(client_id="NINA_Mock")
+client = mqtt.Client(client_id="NINA_Mock", callback_api_version=mqtt.CallbackAPIVersion.VERSION2)
 client.connect(broker_address, 1883, 60)
 
 # Funzione per inviare messaggi di N.I.N.A.
