@@ -7,6 +7,7 @@ WORKDIR /app
 RUN pip install paho-mqtt
 
 # Copia dello script NINAMock nel container
+COPY config.json .
 COPY nina_mock.py .
 
 # Comando per eseguire lo script NINAMock
